@@ -2,8 +2,8 @@
 
 int main()
 {
-    int x,y;
-    scanf("%d  %d",&x,&y);
+    int x;
+    scanf("%d",&x);
     if(x!=0)
         printf("False");
     else
