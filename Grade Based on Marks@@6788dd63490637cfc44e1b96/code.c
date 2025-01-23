@@ -14,4 +14,5 @@ int main()
         printf("D");
     else if(x<60)
         printf("F");
-    return 0;}
+    return 0;
+}
