@@ -14,5 +14,7 @@ int main()
         printf("D");
     else if(x<60)
         printf("F");
+    else
+        printf("Invalid");
     return 0;
 }
