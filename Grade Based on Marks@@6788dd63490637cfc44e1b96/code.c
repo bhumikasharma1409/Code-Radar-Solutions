@@ -12,9 +12,8 @@ int main()
         printf("c");
     else if(x>=60 && x<70)
         printf("D");
-    else if(x<60)
-        printf("F");
     else
-        printf("Invalid");
+        printf("F");
+    
     return 0;
 }
