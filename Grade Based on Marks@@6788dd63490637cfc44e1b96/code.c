@@ -14,7 +14,7 @@ int main()
     }
     else if(x>=70 && x<80)
     {   
-        printf("c");
+        printf("C");
     }
     else if(x>=60 && x<70)
     {
