@@ -4,8 +4,7 @@ int main()
 {
     char a[20],temp;
     int i,j,l;
-    printf("");
-    get(a);
+    scanf("%s",&a)
 
     for(l=0;a[l]!='\0';l++);
     j=l-1;
