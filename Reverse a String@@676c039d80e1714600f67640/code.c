@@ -6,7 +6,7 @@ int main()
     int i,j,l;
     scanf("%s",&a)
 
-    for(l=0;a[l]!='\0';l++);
+    for(l=0;a[l]!='\0';l++)
     j=l-1;
     for(i=0;i<l/2;i++)
     {
