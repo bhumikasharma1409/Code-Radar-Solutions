@@ -2,7 +2,7 @@
 
 int main()
 {
-    char a[20],temp;
+    char a[],temp;
     int i,j,l;
     scanf("%s",&a)
 
