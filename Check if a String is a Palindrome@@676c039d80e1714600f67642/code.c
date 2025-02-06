@@ -17,6 +17,6 @@ int main()
         j--;
     }
     printf("Yes");
-    
+    return 0;
 
 }
