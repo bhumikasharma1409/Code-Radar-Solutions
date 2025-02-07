@@ -4,6 +4,7 @@ int main()
 {
     int i,n;
     scanf("%d",&n);
+    printf("%d\n",n);
     int a[n];
     for(i=0;i<n;i++)
     {
