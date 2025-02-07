@@ -13,6 +13,7 @@ int main()
     {
         printf("%d ",a[i]);
     }
+    printf("\n");
     int max= a[0] , min = a[0];
     for(i=1;i<n;i++)
     {
@@ -27,7 +28,7 @@ int main()
         }    
 
     }
-    printf("%d  %d",min,max);
+    printf("%d %d",min,max);
     return 0;
 
 }
