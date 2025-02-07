@@ -12,7 +12,7 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        if(freq[i] = -1)
+        if(freq[i] == -1)
             continue;
 
         for(j=i+1;j<n;j++)
