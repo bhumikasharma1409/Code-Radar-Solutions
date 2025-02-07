@@ -2,22 +2,24 @@
 
 int main()
 {
-    int i,n;
+    int i,n,max=1;
     scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
-        if(a[i]%2==0)
-        {
-            if(a[i] > a[i+1])
-                {
-                    printf("%d",a[i]);
-                }
-            else
-                printf("%d",a[i+1]);
+
+         if (a[i] % 2 == 0) {
+            if (a[i] > max)
+            {
+                max = a[i];
+            }
         }
     }
+
+    if (max != -1)
+        printf("%d", max_even);
+
     return 0;
 
 }
