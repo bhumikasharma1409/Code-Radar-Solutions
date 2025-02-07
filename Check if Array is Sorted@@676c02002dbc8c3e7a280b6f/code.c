@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i,n,sorted=0;
+    int i,n,sorted=1;
     scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
@@ -13,12 +13,12 @@ int main()
     {
         if(a[i] > a[i+1])
         {
-            sorted = 0
+            sorted = 0;
             break;
         }
     }
 
-    if (sorted > 0)
+    if (sorted)
         printf("Sorted\n");
     else
         printf("Not Sorted\n");
