@@ -30,5 +30,6 @@ int main()
     if (a[n - 1] > a[n - 2])  
         printf("%d\n", a[n - 1]);
 
+
     return 0;
 }
