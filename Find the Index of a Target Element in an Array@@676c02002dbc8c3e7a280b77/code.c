@@ -19,6 +19,11 @@ int main()
             break;
         }
     }
+
+    if (!found)
+    {
+        printf("-1\n"); 
+    }
     return 0;
 
 }
