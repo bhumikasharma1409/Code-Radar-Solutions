@@ -2,30 +2,27 @@
 
 int main()
 {
-    int i,n;
-    scanf("%d",&n);
+    int i, n;
+    scanf("%d", &n);
     int a[n];
-    for(i=0;i<n;i++)
-    {
-        scanf("%d\n",&a[i]);
+
+    for (i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
     }
 
-    if(n==1)
-    {
-        printf("%d",a[0]);
+    if (n == 1) {  
+        printf("%d\n", a[0]);
         return 0;
     }
     
-    if(a[0] > a[1])
-    {
-        printf("%d",a[0]);
+    if (a[0] > a[1]) {  
+        printf("%d\n", a[0]);  
         return 0;
     }
 
-    for (i = 1; i < n - 1; i++) 
-    {  
+    for (i = 1; i < n - 1; i++) {  
         if (a[i] > a[i - 1] && a[i] > a[i + 1]) {  
-            printf("%d\n", a[i]); 
+            printf("%d\n", a[i]);  
             return 0;
         }
     }
