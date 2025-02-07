@@ -7,7 +7,7 @@ int main()
     int a[n];
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d\n",&a[i]);
     }
 
     if(n==1)
