@@ -4,7 +4,7 @@
 
 int main()
 {
-    int i,n,j;
+    int i,n,j,count=0,major;
     scanf("%d",&n);
     int a[n] , freq[n];
     for(i=0;i<n;i++)
@@ -27,9 +27,14 @@ int main()
         }
     }
 
-    if(freq[i] > 1)
+    if(count > n/2)
     {
-        printf("%d",freq[i]);
+        major = a[i];
+        break;
     }
-    return 0;
+
+    if (major != -1)
+        printf("%d\n", major);
+
+   return 0;
 }
