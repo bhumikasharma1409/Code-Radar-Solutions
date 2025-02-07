@@ -29,7 +29,7 @@ int main()
 
     if(freq[i] > 1)
     {
-        printf("%d",a[i]);
+        printf("%d",freq[i]);
     }
     return 0;
 }
