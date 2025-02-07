@@ -7,8 +7,12 @@ int main()
     int a[n];
     for(i=0;i<n;i++)
     {
-        scanf("%d",&num);
-        if(a[i] == num)
+        scanf("%d",&a[i]);
+    }
+    scanf("%d",&num);
+    for(i=0;i<n;i++)
+    {
+         if(a[i] == num)
         {
             printf("%d",i);
             found=1;
