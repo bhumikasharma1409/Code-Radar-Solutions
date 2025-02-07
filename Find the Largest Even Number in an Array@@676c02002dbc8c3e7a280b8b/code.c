@@ -18,7 +18,7 @@ int main()
     }
 
     if (max != -1)
-        printf("%d", max_even);
+        printf("%d", max);
 
     return 0;
 
