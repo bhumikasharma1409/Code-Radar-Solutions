@@ -31,7 +31,7 @@ int main()
     {
         med = a[n/2];
     }
-    printf("%d",med);
+    printf("%f",med);
     return 0;
 
 }
