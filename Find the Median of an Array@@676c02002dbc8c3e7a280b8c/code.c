@@ -22,16 +22,16 @@ int main()
         }
     }
 
-    float med;
+    int med;
     if(n%2==0)
     {
-        med = (a[n/2 - 1] + a[n/2])  / 2.0;
+        med = (a[n/2 - 1] + a[n/2])  / 2;
     }
     else
     {
         med = a[n/2];
     }
-    printf("%f",med);
+    printf("%d",med);
     return 0;
 
 }
