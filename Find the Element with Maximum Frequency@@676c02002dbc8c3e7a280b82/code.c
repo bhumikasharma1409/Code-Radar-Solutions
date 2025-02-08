@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i,j,n,max=0,element;
+    int i,j,n,max=0,element,count=1;
     scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
@@ -15,7 +15,7 @@ int main()
         {
             if(a[i] == a[j])
             {
-                count++
+                count++;
             }
         }
     }
