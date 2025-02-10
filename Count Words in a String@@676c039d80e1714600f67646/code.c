@@ -3,9 +3,9 @@
 int main()
 {
     char str[100];
-    int ctr=1,l;
+    int ctr=1,i;
     scanf("%[^\n]",&str);
-    for(l = 0;a[l] != '\0'; l++)
+    for(i = 0;str[i] != '\0'; i++)
     {
         if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\n' && str[i + 1] != '\0')
         {
