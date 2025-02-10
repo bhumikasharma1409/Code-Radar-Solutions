@@ -1,18 +1,24 @@
 #include <stdio.h>
+#include <string.h>
 
-int main()
-{
+int main() {
     char str[100];
-    int ctr=1,i;
-    scanf("%[^\n]", str);
+    int ctr = 0, i = 0;
 
-    for(i = 0;str[i] != '\0'; i++)
-    {
-        if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\n' && str[i + 1] != '\0')
-        {
+    scanf(" %[^\n]", str);
+    int len = strlen(str);
+    
+    while (i < len) {
+        while (i < len && str[i] == ' ')
+            i++;
+
+        if (i < len && str[i] != ' ') {
             ctr++;
+            while (i < len && str[i] != ' ')
+                i++;
         }
     }
+
     printf("%d\n", ctr);
     return 0;
 }
