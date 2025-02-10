@@ -4,8 +4,7 @@ int main()
 {
     char a[100];
     int ctr=0,l;
-    printf("");
-    scanf("%s",&a)
+    scanf("%s",&a);
     for(l = 0;a[l] != '\0'; l++)
     {
         if (a[l] == 'a' || a[l] == 'e' || a[l] == 'i' || a[l] == 'o' || a[l] == 'u' ||
