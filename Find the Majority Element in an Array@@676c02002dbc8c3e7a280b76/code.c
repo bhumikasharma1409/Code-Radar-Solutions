@@ -1,40 +1,42 @@
 #include <stdio.h>
 
-#include <stdio.h>
+int main() {
+    int i, n, j, count, major = -1;
+    
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+    
+    int a[n], freq[n];
 
-int main()
-{
-    int i,n,j,count=0,major;
-    scanf("%d",&n);
-    int a[n] , freq[n];
-    for(i=0;i<n;i++)
-    {
-        scanf("%d ",&a[i]);
+    printf("Enter %d elements: ", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
         freq[i] = 1;
     }
-    for(i=0;i<n;i++)
-    {
-        if(freq[i] = -1)
+
+    for (i = 0; i < n; i++) {
+        if (freq[i] == -1)  
             continue;
 
-        for(j=i+1;j<n;j++)
-        {
-            if( a[i] == a[j])
-            {
-                freq[i]++;
-                freq[j] == -1;
+        count = 1; 
+
+        for (j = i + 1; j < n; j++) {
+            if (a[i] == a[j]) {
+                count++;
+                freq[j] = -1; 
             }
+        }
+
+        if (count > n / 2) {
+            major = a[i];
+            break; 
         }
     }
 
-    if(count > n/2)
-    {
-        major = a[i];
-        break;
-    }
-
     if (major != -1)
-        printf("%d\n", major);
+        printf("Majority Element: %d\n", major);
+    else
+        printf("No Majority Element Found\n");
 
-   return 0;
+    return 0;
 }
