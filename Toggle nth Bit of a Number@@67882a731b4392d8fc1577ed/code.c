@@ -3,7 +3,7 @@
 int main() {
     unsigned int x;
     int n;
-    scanf("%d %d",&x,&n);
+    scanf("%u %u",&x,&n);
 
     x = x & ~(1 << n);
 
