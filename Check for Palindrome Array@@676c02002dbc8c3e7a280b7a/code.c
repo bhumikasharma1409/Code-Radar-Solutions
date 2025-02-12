@@ -8,7 +8,7 @@ int main()
     int l = sizeof(a) / sizeof(a[0]);
     int is_palindrome = 1;
     
-    for(i=1;i<n;i++)
+    for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
     }
