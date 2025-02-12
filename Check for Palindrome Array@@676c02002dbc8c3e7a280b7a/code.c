@@ -4,9 +4,10 @@ int main()
 {
     int i,n;
     scanf("%d",&n);
+    int a[n];
     int l = sizeof(a) / sizeof(a[0]);
     int is_palindrome = 1;
-    int a[n];
+    
     for(i=1;i<n;i++)
     {
         scanf("%d",&a[i]);
@@ -21,7 +22,7 @@ int main()
     }
 
     if (is_palindrome)
-        printf("Yes");
+        printf("YES");
     else
         printf("NO");
 
