@@ -1,18 +1,18 @@
 #include<stdio.h>
 
-struct students
+struct student
 {
     int rollno;
     char name[50];
     float marks;
-}
+};
 
 int main()
 {
     int n,i;
     scanf("%d",&n);
 
-    struct students[n];
+    struct  student students[n];
     for(i=0;i<=n;i++)
     {
         scanf("%d %s %f", &students[i].rollno, students[i].name, &students[i].marks);
