@@ -21,5 +21,5 @@ int main()
         printf("Roll Number: %d, Name: %s, Marks: %.1f\n", 
                 students[i].rollno, students[i].name, students[i].marks);
     }
-
+    return 0;
 }
