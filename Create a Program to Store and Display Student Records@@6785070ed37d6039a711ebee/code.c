@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h> // For malloc()
 
 struct Student {
     int roll_number;
@@ -11,10 +10,11 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    struct Student *students = (struct Student*) malloc(n * sizeof(struct Student)); 
+    struct Student students[n];
 
     for (int i = 0; i < n; i++) {
-        scanf("%d %[^\n] %f", &students[i].roll_number, students[i].name, &students[i].marks);
+        printf("", i + 1);
+        scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
     }
 
     for (int i = 0; i < n; i++) {
@@ -22,6 +22,10 @@ int main() {
                 students[i].roll_number, students[i].name, students[i].marks);
     }
 
-    free(students); 
     return 0;
 }
+
+
+
+
+
