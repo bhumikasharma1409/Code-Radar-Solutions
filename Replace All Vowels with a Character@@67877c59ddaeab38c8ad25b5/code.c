@@ -1,20 +1,19 @@
 #include <stdio.h>
 
-int main()
-{
-    char a[100];
-    char n;
-    int ctr=0,l;
-    scanf("%s",&n)
-    scanf("%s",&a);
-    for(l = 0;a[l] != '\0'; l++)
-    {
-        if (a[l] == 'a' || a[l] == 'e' || a[l] == 'i' || a[l] == 'o' || a[l] == 'u' ||
-         a[l] == 'A' || a[l] == 'E' || a[l] == 'I' || a[l] == 'O' || a[l] == 'U')
-         {
-            a[l] = n ;
-         }
+int main() {
+    char str[100], ch;
+    int i;
+
+    scanf("%s", str);
+    scanf(" %c", &ch);
+
+    for (i = 0; str[i] != '\0'; i++) {
+        if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||
+            str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U') {
+            str[i] = ch;
+        }
     }
-    printf("%s",a);
-return 0;
+
+    printf("%s\n", str);
+    return 0;
 }
