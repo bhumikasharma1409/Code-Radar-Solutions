@@ -9,10 +9,16 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-    for(i=0;i<=n;i++)
+    for (i = 0; i < n; i++) 
     {
-        if(a[i]%i==0)
-            printf("%d",a[i]);
+        int num = a[i], isPrime = 1;  
+        if (num < 2) 
+            isPrime = 0;  
+        for (j = 2; j * j <= num; j++)
+            if (num % j == 0) isPrime = 0;  
+        if (isPrime) count++;  
     }
+
+    printf("%d\n", count);
     return 0;
 }
