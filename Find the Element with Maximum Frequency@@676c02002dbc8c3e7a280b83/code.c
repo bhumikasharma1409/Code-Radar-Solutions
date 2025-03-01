@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n,i,j,ctr=0;
+    int n,i,j,ctr=0,max = 0,element;
     scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
@@ -16,10 +16,12 @@ int main()
             if(a[j]==a[i])
                 ctr++;
             {
-                if(ctr>1)
-                    printf("%d",a[i]);
+                if(ctr > max)
+                    max = ctr;
+                    element = a[i];
             }
         }
     }
+    printf("%d",element);
     return 0;
 }
