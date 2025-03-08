@@ -14,7 +14,7 @@ int main()
         int num = a[i], isPrime = 1;  
         if (num < 2) 
             isPrime = 0;  
-        for (j = 2; j * j <= num; j++)
+        for (j = 3; j <= num / 2; j += 2)
             if (num % j == 0) isPrime = 0;  
         if (isPrime) count++;  
     }
