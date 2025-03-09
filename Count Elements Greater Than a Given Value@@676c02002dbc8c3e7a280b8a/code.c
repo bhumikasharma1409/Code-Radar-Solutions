@@ -1,26 +1,18 @@
 #include <stdio.h>
 
-int main()
-{
-    int i, n;
-    scanf("%d", &n);
+int main() {
+    int n, b, i, ctr = 0;
+    
+    scanf("%d %d", &n, &b);  // Read both n and b
     
     int a[n];  
     for (i = 0; i < n; i++)  
-    {
         scanf("%d", &a[i]);
-    }
-    
-    int b, ctr = 0;
-    scanf("%d", &b); 
-    
+
     for (i = 0; i < n; i++)  
-    {
         if (a[i] > b)  
             ctr++;
-    }
-    
+
     printf("%d\n", ctr); 
-    
     return 0;
 }
