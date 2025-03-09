@@ -15,7 +15,7 @@ int main()
     {
         if(b>a[i])
             ctr++;
-    }
-    printf("%d",ctr);
+            printf("%d",ctr);    }
+    
     return 0;
 }
