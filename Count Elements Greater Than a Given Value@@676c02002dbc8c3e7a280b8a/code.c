@@ -16,7 +16,7 @@ int main()
         if(b<a[i])
             ctr++;
     }
-    printf("%d",ctr);
+    printf("%d\n",ctr);
     
     return 0;
 }
