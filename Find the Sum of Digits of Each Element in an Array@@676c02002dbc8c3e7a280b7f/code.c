@@ -13,6 +13,10 @@ int main()
     {
         int num= a[i];
         int sum=0;
+        if(num<0)
+        {
+            num=-num;
+        }
 
         while(num>0)
         {
