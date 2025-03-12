@@ -16,7 +16,14 @@ int main()
         for(j=i+1;j<n;j++)
         {
             if(a[i] + a[j] == l)
-                printf("%d %d\n",a[i],a[j]);
+            {
+                if (a[i] < a[j]) {
+                    printf("%d %d\n", a[i], a[j]);
+                } else {
+                    printf("%d %d\n", a[j], a[i]);
+                }
+                break;
+            }
         }
     }
     return 0;
