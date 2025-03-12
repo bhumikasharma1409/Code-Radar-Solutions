@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n,i;
+    int n,i,j;
     scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
@@ -13,8 +13,11 @@ int main()
     scanf("%d",&l);
     for(i=0;i<n;i++)
     {
-        if(a[i]+a[i+1]=l)
-            printf("%d %d",a[i],a[i+1]);
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i] + a[j] == l)
+                printf("%d %d\n",a[i],a[j]);
+        }
     }
     return 0;
 }
