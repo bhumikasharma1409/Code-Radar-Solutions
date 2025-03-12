@@ -16,28 +16,24 @@ int main() {
     int n, i, j;
     scanf("%d", &n);
     int a[n];
-    
+
     for (i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-    
+
     int l;
     scanf("%d", &l);
 
-    // Sort the array to ensure pairs are printed in order
+    // Sort array to ensure output is ordered
     sort(a, n);
 
     for (i = 0; i < n; i++) {
-        if (i > 0 && a[i] == a[i - 1]) {
-            continue; // Skip duplicate numbers
-        }
         for (j = i + 1; j < n; j++) {
             if (a[i] + a[j] == l) {
                 printf("%d %d\n", a[i], a[j]);
-                break; // Move to next unique number
             }
         }
     }
-    
+
     return 0;
 }
