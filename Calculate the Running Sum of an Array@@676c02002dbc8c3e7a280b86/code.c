@@ -12,7 +12,7 @@ int main()
     int sum=0;
     for(i=0;i<n;i++)
     {
-        sum += a[i]; /
+        sum += a[i]; 
         printf("%d ", sum); 
     }
     return 0;
