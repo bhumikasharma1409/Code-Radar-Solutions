@@ -1,5 +1,17 @@
 #include <stdio.h>
 
+void sort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] > arr[j]) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
+
 int main() {
     int n, i, j;
     scanf("%d", &n);
@@ -11,21 +23,18 @@ int main() {
     
     int l;
     scanf("%d", &l);
-    
+
+    // Sort the array to ensure pairs are printed in order
+    sort(a, n);
+
     for (i = 0; i < n; i++) {
+        if (i > 0 && a[i] == a[i - 1]) {
+            continue; // Skip duplicate numbers
+        }
         for (j = i + 1; j < n; j++) {
             if (a[i] + a[j] == l) {
-                // Ensure only unique pairs are printed once
-                int isDuplicate = 0;
-                for (int k = 0; k < i; k++) {
-                    if ((a[k] == a[i] && a[j] == a[k + 1]) || (a[k] == a[j] && a[i] == a[k + 1])) {
-                        isDuplicate = 1;
-                        break;
-                    }
-                }
-                if (!isDuplicate) {
-                    printf("%d %d\n", a[i], a[j]);
-                }
+                printf("%d %d\n", a[i], a[j]);
+                break; // Move to next unique number
             }
         }
     }
