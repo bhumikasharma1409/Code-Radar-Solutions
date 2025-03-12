@@ -9,10 +9,11 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-    int sum;
+    int sum=0;
     for(i=0;i<n;i++)
     {
-        printf(sum=sum+a[i+1]);
+        sum += a[i]; /
+        printf("%d ", sum); 
     }
     return 0;
 }
