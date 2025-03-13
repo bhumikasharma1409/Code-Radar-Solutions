@@ -6,4 +6,5 @@ void fibo
     c=a+b;
     a=b;
     b=c;
+    return b;
 }
