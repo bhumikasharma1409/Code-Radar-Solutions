@@ -13,7 +13,7 @@ int main()
     scanf("%d",&m);
     for(i=0;i<n;i++)
     {
-        for(j=i+1;i<n;i++)
+        for(j=i+1;j<n;j++)
         {
             if(a[i]+a[j]==m)
                 printf("%d %d\n",a[i],a[j]);
